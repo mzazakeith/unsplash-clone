@@ -1,0 +1,20 @@
+.middle{
+    padding-top:5%;
+    padding-right:3vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+.middle{font-size:3vw;}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+.middle{font-size:2vw;}
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+.middle{font-size:2vw;}
+}
