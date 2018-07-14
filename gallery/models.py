@@ -27,3 +27,5 @@ class Category(models.Model):
         self.delete()
 
 
+class Image(models.Model):
+    image = models.ImageField(upload_to='images/')
