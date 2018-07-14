@@ -1,0 +1,96 @@
+.con{
+     position: relative;
+    color: white;
+    width:100%;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.land{
+    filter: brightness(50%);
+    width:100%;
+}
+
+.smallerize{
+ font-size: 17px;
+}
+
+
+.responsive_h1{
+    font-size:4vw;
+}
+.responsive{
+    font-size:2vw;
+}
+
+body{
+font-family: 'Open Sans', sans-serif;
+}
+
+
+/* ........................................................................Media Queries............................................................... */
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px)  and (-webkit-min-device-pixel-ratio : 2) {
+.responsive_h1{
+    font-size:6vw;
+}
+.responsive{
+    font-size:4vw;
+}
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px)  and (-webkit-device-pixel-ratio: 2){
+.responsive_h1{
+    font-size:6vw;
+}
+.responsive{
+    font-size:4vw;
+}
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2){
+.responsive_h1{
+    font-size:6vw;
+}
+.responsive{
+    font-size:4vw;
+}
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 2){
+.responsive_h1{
+    font-size:6vw;
+}
+.responsive{
+    font-size:4vw;
+}
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3){
+.responsive_h1{
+    font-size:6vw;
+}
+.responsive{
+    font-size:4vw;
+}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+.responsive_h1{
+    font-size:6vw;
+}
+.responsive{
+    font-size:4vw;
+}
+}
