@@ -1,0 +1,19 @@
+{%extends 'base.html'%}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="{{image.image.url}}"  class="img-responsive img-thumbnail" alt="">
+        </div>
+        <div class="col-md-8 middle push_left">
+            <div >
+                <p>Name:{{image.image_name}}</p>
+                <p>Description:{{image.image_description}}</p>
+                <p>Location:{{image.location}}</p>
+                <p>Category:{{image.category_name}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
