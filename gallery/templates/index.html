@@ -12,11 +12,26 @@
   }
 </script>
 
+<div class="con">
+
+    <img src="{% static 'images/image3.jpg' %}" alt="Photo of the day" class="img-fluid land">
+    <div class="centered container">
+        <h1 class="responsive_h1">Unsplash</h1>
+        <br>
+        <h4 class="responsive">Beautiful, free photos.</h4>
+        <h4 class="responsive">Gifted by the world’s most generous community of photographers. 🎁</h4>
+    </div>
+
+
+</div>
+
 <div class="container-fluid text-center">
     {% for image in images %}
     <img src="{{image.image.url}}" class="img-fluid rounded" data-toggle="modal" data-target="#{{image.id}}">
     {% endfor %}
-</div>{% endblock %}{% endblock %}{% endblock %}{% endblock %}<!--modal starts here-->
+</div>
+
+<!--modal starts here-->
 {% for image in images %}
 <div class="modal fade" id="{{image.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered text-center" role="document">
@@ -43,3 +58,6 @@
 <!--modal ends here-->
 
 {% endfor %}
+
+
+{% endblock %}
