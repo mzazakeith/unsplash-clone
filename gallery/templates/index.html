@@ -7,4 +7,30 @@
     {% for image in images %}
     <img src="{{image.image.url}}" class="img-fluid rounded" data-toggle="modal" data-target="#{{image.id}}">
     {% endfor %}
-</div>{% endblock %}{% endblock %}{% endblock %}{% endblock %}
+</div>{% endblock %}{% endblock %}{% endblock %}{% endblock %}<!--modal starts here-->
+{% for image in images %}
+<div class="modal fade" id="{{image.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered text-center" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle"> {{image.image_name}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <a href="{% url 'one' image_id=image.id%}"> <img src="{{image.image.url}}" class="img-fluid rounded"></a>
+
+                <div class="modal-footer">
+                    <input class="form-control" type="text" value="{{image.image_link}}" id="link">
+                    <!--<a onclick="myFunction()" class="bttn-green mt-3">Copy link</a>-->
+                    <a onclick="myFunction()"><button type="button"  class="btn btn-primary">Copy Link</button></a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--modal ends here-->
+
+{% endfor %}
