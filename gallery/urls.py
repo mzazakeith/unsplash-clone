@@ -11,3 +11,5 @@ urlpatterns = [
     url(r'^location/(?P<location_id>\d+)',views.imageLocation, name='location')
 ]
 
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
