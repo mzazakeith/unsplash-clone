@@ -50,3 +50,11 @@ class ImageTestClass(TestCase):
 
         self.new_image.save()
 
+    def tearDown(self):
+        Location.objects.all().delete()
+        Category.objects.all().delete()
+        Image.objects.all().delete()
+
+    def test_show_images(self):
+        images = Image.show_images()
+        self.assertTrue(len(images) > 0)
