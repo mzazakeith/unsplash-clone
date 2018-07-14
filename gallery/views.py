@@ -10,6 +10,12 @@ def index(request):
     return render(request, 'index.html', {"images": images , "title":title})
 
 
+def image(request, image_id):
+    try:
+        image = Image.objects.get(id=image_id)
+    except DoesNotExist:
+        raise Http404()
+    return render(request, 'image.html', {"image": image})
 
 
 def search_results(request):
