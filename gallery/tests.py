@@ -36,3 +36,17 @@ class CategoryTestClass(TestCase):
         self.assertTrue(len(categories) == 0)
 
 
+class ImageTestClass(TestCase):
+    def setUp(self):
+        self.africa = Location(location='Africa')
+        self.africa.save_location()
+
+        self.abstract = Category(category_name="abstract")
+        self.abstract.save_category()
+
+        self.new_image = Image(image_name='Test Image', image_description='An abstract image taken in africa',
+                               image='image/example.jpg', image_link='google.com/image/1', categories=self.abstract,
+                               location=self.africa)
+
+        self.new_image.save()
+
