@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/mzaza/Documents/moringa-school-projects/core/Django/Unsplah-Clone/virtual"
+VIRTUAL_ENV="/home/mzaza/Documents/moringa-school-projects/core/Django/Unsplash-Clone/virtual"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

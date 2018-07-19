@@ -1,4 +1,4 @@
-#!/home/mzaza/Documents/moringa-school-projects/core/Django/Unsplah-Clone/virtual/bin/python
+#!/home/mzaza/Documents/moringa-school-projects/core/Django/Unsplash-Clone/virtual/bin/python
 from django.core import management
 
 if __name__ == "__main__":

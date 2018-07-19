@@ -1,4 +1,4 @@
-#!/home/mzaza/Documents/moringa-school-projects/core/Django/Unsplah-Clone/virtual/bin/python
+#!/home/mzaza/Documents/moringa-school-projects/core/Django/Unsplash-Clone/virtual/bin/python
 
 import sys
 import getopt
