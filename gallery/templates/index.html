@@ -27,7 +27,7 @@
 
 <div class="container-fluid text-center">
     {% for image in images %}
-    <img src="{{image.image.url}}" class="img-fluid rounded" data-toggle="modal" data-target="#{{image.id}}">
+    <img src="{{image.image.cdn_url}}" class="img-fluid rounded" data-toggle="modal" data-target="#{{image.id}}">
     {% endfor %}
 </div>
 
@@ -43,7 +43,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <a href="{% url 'one' image_id=image.id%}"> <img src="{{image.image.url}}" class="img-fluid rounded"></a>
+                <a href="{% url 'one' image_id=image.id%}"> <img src="{{image.image.cdn_url}}" class="img-fluid rounded"></a>
 
                 <div class="modal-footer">
                     <input class="form-control" type="text" value="{{image.image_link}}" id="link">
