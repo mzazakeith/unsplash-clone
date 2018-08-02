@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aae99c45-33ad-4bc1-a000-c33a1beed29a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallery/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallery/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallery/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallery/templates/location.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/templates/location.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallery/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/templates/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unsplash/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/unsplash/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/virtual/pip-selfcheck.json" afterDir="false" />
-    </list>
+    <list default="true" id="aae99c45-33ad-4bc1-a000-c33a1beed29a" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,7 +256,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33636364" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
